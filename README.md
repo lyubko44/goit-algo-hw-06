@@ -1,8 +1,9 @@
 Завдання 2:
 
-*BFS: 
+BFS: 
 Rocklin Folsom Roseville Arden North Highlands Sacramento 
-*DFS: 
+
+DFS: 
 Rocklin Roseville North Highlands Arden Sacramento Folsom
 
 Виведення відрізнятися. Це тому що проблема у розборі черги та списку сусідів у BFS. У функції bfs_iterative ми використовуєте множину visited для відстеження відвіданих вершин. При кожній ітерації ми робимо queue.extend(set(graph[vertex]) - visited), що видаляє вже відвідані вершини зі списку сусідів вершини.
